@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First web</title>
+</head>
+
+<body>
+    <h1>Bienvenidos a mi web</h1>
+    <h2>Somos un par de desarrolladores web</h2>
+    <p>Prueba del curso para un Parrafo, cada parrafo tiene su salto de linea</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ducimus quam cum laboriosam quis explicabo sed,
+        iste minus iure. Eum iure nulla beatae quia at dignissimos nesciunt iste quod facere quam.</p>
+    <hr>
+    <h3>Tercer encabezado de una pagina. HR genera una linea para dividir</h3>
+    <p>Lorem ipsum dolor sit amet <em>consectetur adipisicing elit.</em>Nobis obcaecati blanditiis sint perferendis ipsa
+        aspernatur fugiat, vero voluptate doloremque amet <strong>officiis explicabo magni qui</strong>. Placeat laborum
+        magni necessitatibus nesciunt ullam.</p>
+    <blockquote>Esto es una etiqueta blockquote que se utiliza para remarcar una cita.</blockquote>
+
+    <!-- HR muestra una linea para dividir secciones -->
+    <hr>
+    <h3>Lista Ordenada</h3>
+    <ol>
+        <li>Manzana</li>
+        <li>Naranja</li>
+        <li>Pera</li>
+        <li>Sandia</li>
+        <li>Arandano</li>
+    </ol>
+
+    <h3>Lista desordenada</h3>
+    <ul>
+        <li>Manzana</li>
+        <li>Naranja</li>
+        <li>Pera</li>
+        <li>Sandia</li>
+        <li>Arandano</li>
+    </ul>
+
+    <hr>
+    <h3>Imagenes en HTML</h3>
+    <img src="./img/aguila.jfif" alt="Texto para cuando la imagen no cargue, importante para seo"
+        title="Titulo de imagen" width="255px" height="" />
+
+    <hr>
+    <h3>Tablas</h3>
+    <table border="1">
+        <!-- Para representar una fila TR -->
+        <tr>
+            <!-- Etiqueta td para representar los titulos de una columna -->
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Pais</th>
+        </tr>
+        <tr>
+            <!-- Etiqueta td para representar una columna -->
+            <td>Jose</td>
+            <td>Hernandez</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Tania</td>
+            <!-- colspan expande la celda en dos columnas -->
+            <td colspan="2">Castañeda</td>
+            <!-- <td>España</td> -->
+        </tr>
+    </table>
+
+    <hr>
+    <h3>Formulario</h3>
+    <form action="">
+        <p>
+            <!-- label para un titulo del input -->
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="" placeholder="Aca escribe tu nombre" />
+        </p>
+        <p>
+            <label for="descripcion">Descripción</label>
+            <textarea name="descripcion"></textarea>
+        </p>
+        <input type="radio" name="genero" value="hombre" id=""> Hombre <br/>
+        <input type="radio" name="genero" value="hombre" id=""> Mujer <br/>
+        <input type="radio" name="genero" value="hombre" id=""> Prefiero no decir <br/>
+
+        <select name="generoDos" id="">
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Prefiero no decir">Prefiero no decir</option>
+        </select>
+        <input type="submit" value="Enviar Formulario">
+    </form>
+
+</body>
+
+</html>

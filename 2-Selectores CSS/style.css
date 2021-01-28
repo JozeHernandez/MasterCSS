@@ -1,0 +1,105 @@
+/* 
+
+#####################  SELECTORES   ##########################
+*/
+
+
+ /* SELECTOR UNIVERSAL
+    Para seleccionar todos los elementos del html como para usar la letra en todos los elementos   */
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* SELECTOR DE ETIQUETA
+    Seleccionamos las etiquetas de html
+*/
+h1{
+    background: aqua;
+    color: white;
+    padding: 10px;
+}
+a{
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+}
+footer a{
+    /* selecionamos las etiquetas a que estan dentro de footer */
+    color: red;
+}
+
+
+/*  SELECTORES DE ID
+    En el html tendriamos que colocar en la etiqueta id="descripcion"
+*/
+#descripcion,
+#titulo {
+    border: 1px solid black;
+    padding: 15px;
+}
+#titulo{
+    color: blue;
+    border: 2px dashed white;
+}
+
+/* SELECTOR DE CLASE
+    Selectores para multiples elementos
+*/
+.parrafo{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* SELECTOR DE ATRIBUTO
+
+*/
+
+#usuario form{
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+
+}
+#usuario form *{
+    display: block;
+}
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 200px;
+}
+input[type="submit"]{
+    background: green;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+/* SELECTOR HIJO
+
+*/
+
+#menu > li > a{
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+}
+
+/* PRIORIDAD 
+    En cuanto mas especifico sea el selector, tendra mas prioridad
+    Si ponemos !important, damos la maxima prioridad
+*/
+
+#saludo id{
+    background: brown;
+}
+
+h1{
+    background: purple !important;
+}

@@ -1,0 +1,2 @@
+Colocar Alt a las imagenes
+	<img src="" alt="Texto para cuando la imagen no cargue, importante para seo" />
